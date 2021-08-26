@@ -1,0 +1,25 @@
+<form [formGroup]="bookForm" (ngSubmit)="updateBook()">
+  <div class="text-left">
+    <label>Tên</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="title" id="exampleTitle"
+           placeholder="Name" value="{{books.title}}">
+  </div>
+  <div class="text-left">
+    <label>Tác giả</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="author" id="exampleAuthor"
+           placeholder="Author" value="{{books.author}}">
+  </div>
+
+  <div class="text-left">
+    <label>Chi tiết</label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" formControlName="description" id="exampleDetail"
+           placeholder="Detail" value="{{books.description}}">
+  </div>
+  <button type="submit" class="btn btn-success nutPhai mr-2">Cập Nhật</button>
+</form>
